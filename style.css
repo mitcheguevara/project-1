@@ -1,0 +1,84 @@
+header{
+    text-align: center;
+}
+audio {
+   display:none;
+}
+
+.card{
+  height: 300px;
+  width: 200px;
+  position: relative;
+  perspective: 500px;
+  margin: 10px;
+  background: black;
+  color: white;
+  margin: 30px;
+  backface-visibility: visible;
+  transition: .1s;
+  text-align: center;
+}
+.card:active.card{
+  transform: rotateY(+180deg);
+}
+
+/*.flex-container {
+    display: flex;
+    align-content: center;
+    width:100%;
+    height: 1080px;
+    background-color: lightgrey;
+}*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  float: right;
+}
+.flex-item {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#reset button {
+  background: blue;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  position: center
+
+}
+#reset button:active {
+  background: black;
+}
+/*.card:active.card{
+  transform: rotateY(360deg);
+}*/
+/*.front{
+  margin: 30px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: red;
+  backface-visibility: hidden;
+  transition: 1s;
+  text-align: center;
+}
+.back{
+  margin: 30px;
+  height: 90%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: red;
+  transition: 2s;
+  text-align: center;
+}*/
