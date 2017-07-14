@@ -39,8 +39,8 @@ const cards = [
   },
   {
     id: 7,
-    front: 'A party animal with a heart of gold, an instinctive schemer who knows right from wrong, a short man made tall by his bravery and kindness (a dirty word in the Seven Kingdoms).',
-    back: 'Tyrion Lannister'
+    front: 'Regretted his life choices, especially when he returned to the north. His real father died in Kingslanding.',
+    back: 'Theon Greyjoy'
   },
   {
     id: 8,
@@ -84,7 +84,7 @@ const cards = [
 function renderCards2 () {
   let idsLeft = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   for (var i = 0; i < cards.length; i++) {
-    var rand = Math.floor(Math.random() * (idsLeft.length - 0))
+    var rand = Math.floor(Math.random() * (idsLeft.length))
     console.log("idsLeft index="+rand)
     var cardIndex = idsLeft[rand]
     console.log("cardIndex="+ cardIndex);

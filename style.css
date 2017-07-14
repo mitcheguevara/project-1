@@ -4,19 +4,32 @@ header{
 audio {
    display:none;
 }
+p{
+	font-family: "Raleway", sans-serif;
+	color: white;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 20px;
+}
+body {
+    text-align: center;
+    margin: 13px;
+}
 
 .card{
-  height: 300px;
+  border-radius: 25px;
+  height: 230px;
   width: 200px;
   position: relative;
   perspective: 500px;
   margin: 10px;
-  background: black;
+  font-family: "Raleway", sans-serif;
   color: white;
+  padding: 30px 10px;
   margin: 30px;
   backface-visibility: visible;
   transition: .1s;
-  text-align: center;
+  background-color:rgba(192,192,192,0.3)
 }
 .card:active.card{
   transform: rotateY(+180deg);
@@ -34,7 +47,6 @@ audio {
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  float: right;
 }
 .flex-item {
     background-color: blue;
@@ -44,14 +56,16 @@ audio {
 }
 
 #reset button {
-  background: blue;
+  font-family: "Raleway", sans-serif;
+  background: Black;
   border: 0;
   color: white;
   font-size: 14px;
   margin: auto;
   width: 100px;
   height: 40px;
-  position: center
+  border-radius: 25px;
+  background-color:rgba(192,192,192,0.3)
 
 }
 #reset button:active {
