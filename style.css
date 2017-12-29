@@ -71,6 +71,14 @@ body {
 #reset button:active {
   background: black;
 }
+
+<style>
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+</style>
 /*.card:active.card{
   transform: rotateY(360deg);
 }*/

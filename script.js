@@ -9,7 +9,7 @@ button.on('click', handleClick)
 const cards = [
   {
     id: 1,
-    front: '"He is loved and lost (in a twist on rom-com convention the relationship ended with his girlfriend trying to split him down the middle with a long bow)."',
+    front: 'He is loved and lost (in a twist on rom-com convention the relationship ended with his girlfriend trying to split him down the middle with a long bow).',
     back: 'Jon Snow'
   },
   {
@@ -59,28 +59,6 @@ const cards = [
   }
 ]
 
-// function renderCards () {
-//   for (var i = 0; i < cards.length; i++) {
-//     let cardData = cards[i]
-//     let cardElement = $('<div></div>')
-//     cardElement.attr('id', cardData.id)
-//     cardElement.addClass('card')
-//     cardElement.text(cardData.front)
-//     cardElement.on('click', function () {
-//       console.log('test')
-//       $(this).css('transform', '+180deg')
-//       let cardId = $(this).attr('id')
-//       let cardData = cards.find(function (card) {
-//         return card.id == cardId
-//       })
-//       $(this).text(cardData.back)
-//     })
-//     $('.flex-container').append(cardElement)
-//   }
-// }
-//
-// renderCards()
-
 function renderCards2 () {
   let idsLeft = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   for (var i = 0; i < cards.length; i++) {
@@ -108,26 +86,10 @@ function renderCards2 () {
     })
     $('.flex-container').append(cardElement)
   }
+  function PlaySound (path) {
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'Arrow+Swoosh+1.mp3');
+    audioElement.play();
+  }
 }
 renderCards2()
-
-
-// var phrases = [
-//     ['card 1', 'card2']
-// ]
-// var phrases2 = [
-//     ['back1', 'back 2']
-// ]
-// makeFront = function (phrase) {
-//   var div = '<div class="card"><span >Question: ' + phrase[0] + '</span> </div>'
-//   return div
-// }
-// makeBack = function (phrase2) {
-//   var div = '<div class="card"><span >Answer: ' + phrase2[0] + '</span> </div>'
-//   return div
-// }
-//
-// $('#div01').append(makeFront(phrases[0]))
-// $('#div02').append(makeBack(phrases2[0]))
-// $('#div03').append(makeFront(phrases[1]))
-// $('#div04').append(makeBack(phrases2[1]))
